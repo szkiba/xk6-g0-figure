@@ -59,6 +59,17 @@ There is an example in the [example](https://github.com/szkiba/xk6-g0-figure/tre
 ./k6 run example/scrpt.go
 ```
 
+**script.go**
+```go
+package main
+
+import "github.com/common-nighthawk/go-figure"
+
+func Default() {
+	figure.NewFigure("Hello World!", "", true).Print()
+}
+```
+
 **output**
 ```plain
           /\      |‾‾| /‾‾/   /‾‾/   
