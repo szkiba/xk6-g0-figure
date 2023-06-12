@@ -56,7 +56,7 @@ There is an example in the [example](https://github.com/szkiba/xk6-g0-figure/tre
 
 **command**
 ```bash
-./k6 run example/scrpt.go
+./k6 run example/script.go
 ```
 
 **script.go**
