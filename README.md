@@ -4,8 +4,10 @@ Example addon for [xk6-g0](https://github.com/szkiba/xk6-g0)
 
 The xk6-g0-figure addon is an example xk6-g0 addon that demonstrates how to add third-party go packages. The example includes the [go-figure](https://github.com/common-nighthawk/go-figure) package, which is of course not useful in k6 tests.
 
-This is a tempalte repository from which a new addon repository can be easily created. [Create a repository based on this template](https://github.com/szkiba/xk6-g0-figure/generate), then:
+This is a template repository from which a new addon repository can be easily created. [Create a repository based on this template](https://github.com/szkiba/xk6-g0-figure/generate), then:
  - change the `module` line of the `go.mod` file to the name of the new module
+ - change the `package` line of the `exports.go` file to the name of the new package
+ - run `go mod tidy` to fix the go.mod file
  - modify the `//go generate` line in the `exports.go` file to use the appropriate third-party package
  - add the corresponding third-party package using the `go get` command
  - generate the source code using the `go generate .` command
